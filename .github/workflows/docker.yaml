@@ -18,6 +18,8 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Download project
+        uses: actions/checkout@v3
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
