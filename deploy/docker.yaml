@@ -1,0 +1,4 @@
+- hosts: cloud
+  become: yes
+  roles:
+    - name: docker
