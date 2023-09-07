@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.10-buster as builder
+FROM python:3.11-buster as builder
 
 # Set environment varibles
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -15,7 +15,7 @@ RUN python -m venv /opt/venv && \
     pip install --no-cache-dir -r requirements.txt
 
 # Start a new build stage
-FROM python:3.10-slim-buster
+FROM python:3.11-slim-buster
 
 # Create a group and user
 RUN groupadd -r appuser && useradd -u 1001 --no-log-init -r -g appuser appuser
