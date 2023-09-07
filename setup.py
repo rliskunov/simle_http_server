@@ -7,6 +7,6 @@ setup(
     url='https://github.com/rliskunov/simle_http_server',
     license='MIT',
     author='rliskunov',
-    author_email='liskunov.roma@yandex.ru',
+    author_email='liskunov.roma.rl@gmail.com',
     description='Example task about DevOps'
 )
